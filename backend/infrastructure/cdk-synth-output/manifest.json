@@ -1,0 +1,532 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "ContractGuardStack-dev.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "ContractGuardStack-dev.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "ContractGuardStack-dev": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://882334376986/us-east-1",
+      "properties": {
+        "templateFile": "ContractGuardStack-dev.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "Environment": "dev",
+          "ManagedBy": "CDK",
+          "Project": "ContractGuard"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::882334376986:role/cdk-hnb659fds-deploy-role-882334376986-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::882334376986:role/cdk-hnb659fds-cfn-exec-role-882334376986-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-882334376986-us-east-1/c999b3d1c5879fa957f771acad1c0a3e4f91591073b881f3c0195404e2d3e200.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "ContractGuardStack-dev.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::882334376986:role/cdk-hnb659fds-lookup-role-882334376986-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "contract-guard-dev"
+      },
+      "dependencies": [
+        "ContractGuardStack-dev.assets"
+      ],
+      "metadata": {
+        "/ContractGuardStack-dev": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "Environment",
+                "Value": "dev"
+              },
+              {
+                "Key": "ManagedBy",
+                "Value": "CDK"
+              },
+              {
+                "Key": "Project",
+                "Value": "ContractGuard"
+              }
+            ]
+          }
+        ],
+        "/ContractGuardStack-dev/FrontendBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FrontendBucketEFE2E19C"
+          }
+        ],
+        "/ContractGuardStack-dev/FrontendBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FrontendBucketPolicy1DFF75D9"
+          }
+        ],
+        "/ContractGuardStack-dev/FrontendBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FrontendBucketAutoDeleteObjectsCustomResourceDB860B32"
+          }
+        ],
+        "/ContractGuardStack-dev/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/ContractGuardStack-dev/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractsBucketF9AC583D"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractsBucketPolicyC571ED62"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractsBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractsBucketAutoDeleteObjectsCustomResource54DF70DD"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractsBucket/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractsBucketNotifications434C5895"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractsBucket/AllowBucketNotificationsToContractGuardStackdevAnalyzeLambda6F71ECA0": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractsBucketAllowBucketNotificationsToContractGuardStackdevAnalyzeLambda6F71ECA0E306C8DA"
+          }
+        ],
+        "/ContractGuardStack-dev/ReportsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReportsBucket4E7C5994"
+          }
+        ],
+        "/ContractGuardStack-dev/ReportsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReportsBucketPolicy11C4A507"
+          }
+        ],
+        "/ContractGuardStack-dev/ReportsBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReportsBucketAutoDeleteObjectsCustomResource98FB8A10"
+          }
+        ],
+        "/ContractGuardStack-dev/FrontendDistribution/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FrontendDistributionE6EAF405"
+          }
+        ],
+        "/ContractGuardStack-dev/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPool6BA7E5F2"
+          }
+        ],
+        "/ContractGuardStack-dev/UserPool/WebClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolWebClient4C9370B0"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractsTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "ContractsTable778EA487"
+            }
+          }
+        ],
+        "/ContractGuardStack-dev/ContractsTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractsTable778EA487"
+          }
+        ],
+        "/ContractGuardStack-dev/AnalysesTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "AnalysesTableEF1B1690"
+            }
+          }
+        ],
+        "/ContractGuardStack-dev/AnalysesTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalysesTableEF1B1690"
+          }
+        ],
+        "/ContractGuardStack-dev/UploadLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadLambdaServiceRole7676E203"
+          }
+        ],
+        "/ContractGuardStack-dev/UploadLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadLambdaServiceRoleDefaultPolicyCD46782A"
+          }
+        ],
+        "/ContractGuardStack-dev/UploadLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadLambdaF57B15C3"
+          }
+        ],
+        "/ContractGuardStack-dev/AnalyzeLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyzeLambdaServiceRole9099CE4F"
+          }
+        ],
+        "/ContractGuardStack-dev/AnalyzeLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyzeLambdaServiceRoleDefaultPolicyBDAF3F7A"
+          }
+        ],
+        "/ContractGuardStack-dev/AnalyzeLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyzeLambda57C19DB1"
+          }
+        ],
+        "/ContractGuardStack-dev/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/ContractGuardStack-dev/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/ContractGuardStack-dev/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/ContractGuardStack-dev/ReportLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReportLambdaServiceRole0ADB5B0B"
+          }
+        ],
+        "/ContractGuardStack-dev/ReportLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReportLambdaServiceRoleDefaultPolicyF50E51BC"
+          }
+        ],
+        "/ContractGuardStack-dev/ReportLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReportLambda9FE277D8"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPI2A034A45"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIDeploymentE05A2AE04a2e3ddca072a4a0e24f6ff26a60703e"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/DeploymentStage.dev/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIDeploymentStagedevEBCA1B89"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIEndpointE37D7E48"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIOPTIONSF618A130"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontracts25C1EFA7"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractsOPTIONS567564B0"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/upload/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractsuploadA6C4BDEA"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/upload/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractsuploadOPTIONS8B44A86C"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/upload/POST/ApiPermission.ContractGuardStackdevContractGuardAPID475945E.POST..contracts.upload": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractsuploadPOSTApiPermissionContractGuardStackdevContractGuardAPID475945EPOSTcontractsupload56665D3E"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/upload/POST/ApiPermission.Test.ContractGuardStackdevContractGuardAPID475945E.POST..contracts.upload": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractsuploadPOSTApiPermissionTestContractGuardStackdevContractGuardAPID475945EPOSTcontractsupload5B4D3CFE"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/upload/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractsuploadPOSTF94DDDEC"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractId1374DB77"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractIdOPTIONSECC0E38B"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/GET/ApiPermission.ContractGuardStackdevContractGuardAPID475945E.GET..contracts.{contractId}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractIdGETApiPermissionContractGuardStackdevContractGuardAPID475945EGETcontractscontractId5DEE02B2"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/GET/ApiPermission.Test.ContractGuardStackdevContractGuardAPID475945E.GET..contracts.{contractId}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractIdGETApiPermissionTestContractGuardStackdevContractGuardAPID475945EGETcontractscontractId706B1981"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractIdGETDFEDE473"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/report/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractIdreport75F7E32C"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/report/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractIdreportOPTIONSF6170238"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/report/GET/ApiPermission.ContractGuardStackdevContractGuardAPID475945E.GET..contracts.{contractId}.report": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractIdreportGETApiPermissionContractGuardStackdevContractGuardAPID475945EGETcontractscontractIdreportF9EB9103"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/report/GET/ApiPermission.Test.ContractGuardStackdevContractGuardAPID475945E.GET..contracts.{contractId}.report": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractIdreportGETApiPermissionTestContractGuardStackdevContractGuardAPID475945EGETcontractscontractIdreport6E92C551"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractGuardAPI/Default/contracts/{contractId}/report/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractGuardAPIcontractscontractIdreportGETD3AAA92E"
+          }
+        ],
+        "/ContractGuardStack-dev/CognitoAuthorizer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CognitoAuthorizerF3215DBC"
+          }
+        ],
+        "/ContractGuardStack-dev/UploadLambdaLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadLambdaLogGroupB816499D"
+          }
+        ],
+        "/ContractGuardStack-dev/AnalyzeLambdaLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalyzeLambdaLogGroup2A735481"
+          }
+        ],
+        "/ContractGuardStack-dev/ReportLambdaLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReportLambdaLogGroup79316189"
+          }
+        ],
+        "/ContractGuardStack-dev/LambdaInvocationsAlarm/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaInvocationsAlarm3F8BD15C"
+          }
+        ],
+        "/ContractGuardStack-dev/S3StorageAlarm/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3StorageAlarmD6008C0F"
+          }
+        ],
+        "/ContractGuardStack-dev/ApiRequestsAlarm/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRequestsAlarm07CFF343"
+          }
+        ],
+        "/ContractGuardStack-dev/FrontendBucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FrontendBucketName"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractsBucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractsBucketName"
+          }
+        ],
+        "/ContractGuardStack-dev/ReportsBucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReportsBucketName"
+          }
+        ],
+        "/ContractGuardStack-dev/CloudFrontURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CloudFrontURL"
+          }
+        ],
+        "/ContractGuardStack-dev/CloudFrontDistributionId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CloudFrontDistributionId"
+          }
+        ],
+        "/ContractGuardStack-dev/UserPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolId"
+          }
+        ],
+        "/ContractGuardStack-dev/UserPoolClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolClientId"
+          }
+        ],
+        "/ContractGuardStack-dev/ContractsTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ContractsTableName"
+          }
+        ],
+        "/ContractGuardStack-dev/AnalysesTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AnalysesTableName"
+          }
+        ],
+        "/ContractGuardStack-dev/ApiUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiUrl"
+          }
+        ],
+        "/ContractGuardStack-dev/ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiId"
+          }
+        ],
+        "/ContractGuardStack-dev/Environment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Environment"
+          }
+        ],
+        "/ContractGuardStack-dev/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/ContractGuardStack-dev/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/ContractGuardStack-dev/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "ContractGuardStack-dev"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

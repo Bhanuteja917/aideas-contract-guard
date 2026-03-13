@@ -1,0 +1,52 @@
+- generic [ref=e71]:
+  - banner [ref=e72]:
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - heading "ContractGuard" [level=1] [ref=e76]
+        - paragraph [ref=e77]: AI-powered contract analysis
+      - generic [ref=e78]:
+        - button "🎨 Theme" [ref=e80] [cursor=pointer]
+        - generic [ref=e81]: bhanutejach9@gmail.com
+        - button "Sign out" [ref=e82] [cursor=pointer]
+  - main [ref=e83]:
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - heading "My Contracts" [level=1] [ref=e88]
+          - paragraph [ref=e89]: View and manage your uploaded contracts
+        - generic [ref=e90]:
+          - button "Refresh" [ref=e91] [cursor=pointer]:
+            - img [ref=e92]
+            - text: Refresh
+          - button "Upload Contract" [ref=e94] [cursor=pointer]:
+            - img [ref=e95]
+            - text: Upload Contract
+      - table [ref=e99]:
+        - rowgroup [ref=e100]:
+          - row "File Name Size Uploaded Status Actions" [ref=e101]:
+            - columnheader "File Name" [ref=e102]
+            - columnheader "Size" [ref=e103]
+            - columnheader "Uploaded" [ref=e104]
+            - columnheader "Status" [ref=e105]
+            - columnheader "Actions" [ref=e106]
+        - rowgroup [ref=e107]:
+          - row "183.pdf 82.8 KB Feb 22, 2026, 09:10 PM Completed View Analysis →" [ref=e108]:
+            - cell "183.pdf" [ref=e109]:
+              - generic [ref=e110]:
+                - img [ref=e111]
+                - generic [ref=e113]: 183.pdf
+            - cell "82.8 KB" [ref=e114]
+            - cell "Feb 22, 2026, 09:10 PM" [ref=e115]
+            - cell "Completed" [ref=e116]
+            - cell "View Analysis →" [ref=e117]:
+              - button "View Analysis →" [ref=e118] [cursor=pointer]
+          - row "2_waycda.pdf 43.0 KB Feb 22, 2026, 09:00 PM Completed View Analysis →" [ref=e119]:
+            - cell "2_waycda.pdf" [ref=e120]:
+              - generic [ref=e121]:
+                - img [ref=e122]
+                - generic [ref=e124]: 2_waycda.pdf
+            - cell "43.0 KB" [ref=e125]
+            - cell "Feb 22, 2026, 09:00 PM" [ref=e126]
+            - cell "Completed" [ref=e127]
+            - cell "View Analysis →" [ref=e128]:
+              - button "View Analysis →" [ref=e129] [cursor=pointer]

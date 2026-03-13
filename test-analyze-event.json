@@ -1,0 +1,23 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "2026-02-22T14:00:00.000Z",
+      "eventName": "ObjectCreated:Put",
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "test",
+        "bucket": {
+          "name": "contract-guard-contracts-dev-882334376986",
+          "arn": "arn:aws:s3:::contract-guard-contracts-dev-882334376986"
+        },
+        "object": {
+          "key": "c448f448-a021-7023-8a5d-478e06939e57/f698d259-ab73-465f-acb1-7ca4328a0f64.pdf",
+          "size": 43986
+        }
+      }
+    }
+  ]
+}
