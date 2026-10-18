@@ -50,3 +50,6 @@ tmp/
 temp/
 response.json
 test-event*.json
+
+# CDK synth output (generated, incl. bundled Python deps)
+backend/infrastructure/cdk-synth-output/

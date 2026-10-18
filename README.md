@@ -2,6 +2,16 @@
 
 AI-powered contract analysis tool for Indian small businesses, freelancers, and solopreneurs.
 
+**Live demo:** https://d3cel0medhyrga.cloudfront.net/ · **Write-up:** [docs/aws-builder-article.md](docs/aws-builder-article.md)
+
+![Contract analysis: risk score, flagged clauses, bilingual explanations](docs/screenshots/analysis.png)
+
+<details><summary>More screenshots</summary>
+
+![My Contracts list](docs/screenshots/contracts-list.png)
+
+</details>
+
 ## Overview
 
 ContractGuard democratizes legal protection by analyzing contracts for hidden risks, unfair clauses, and compliance issues, providing plain-language explanations and risk scores without expensive legal fees.
